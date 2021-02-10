@@ -1,5 +1,5 @@
 import Particles from "react-particles-js";
-import { FixedDiv } from "../styles/FixedDiv";
+import { FixedDiv } from "../styles/StyledDiv";
 
 const ParticleBg = () => {
   return (
