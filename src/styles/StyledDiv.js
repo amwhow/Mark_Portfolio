@@ -14,6 +14,7 @@ export const HomeDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   padding-left: 150px;
+  flex-grow: 1;
 `;
 
 export const H1 = styled.h1`
