@@ -1,11 +1,47 @@
 import React from "react";
 import { HomeDiv, H1 } from "../styles/StyledDiv";
-import Button from "@material-ui/core/Button";
+import Card from "../styles/3dCard";
+import Grid from "@material-ui/core/Grid";
 
 const Projects = () => {
   return (
     <HomeDiv>
-     <H1>Projects</H1>
+      <Grid container spacing={1}>
+        <Grid
+          item
+          xs={12}
+          md={2}
+          lg={2}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <p className="cursive">&lt;h1&gt;</p>
+          <H1>Projects</H1>
+          <p className="cursive">&lt;/h1&gt;</p>
+        </Grid>
+        
+        <Grid item xs={12} md={10} lg={10} style={{
+            display: "flex",
+            justifyContent: "space-around",
+            flexWrap: "wrap"
+          }}>
+            {/* <Grid container> */}
+              {/* <Grid item > */}
+                <Card element={"furnitureland"}/>
+              {/* </Grid> */}
+              {/* <Grid item > */}
+                <Card element={"junglerun"}/>
+              {/* </Grid> */}
+              {/* <Grid item > */}
+                <Card element={"whatcocktail"}/>
+              {/* </Grid> */}
+            {/* </Grid> */}
+        </Grid>
+       
+      </Grid>
     </HomeDiv>
   );
 };
