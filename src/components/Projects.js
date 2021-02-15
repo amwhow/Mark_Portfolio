@@ -19,7 +19,7 @@ const Projects = () => {
           }}
         >
           <p className="cursive">&lt;h1&gt;</p>
-          <H1>Projects</H1>
+          <H1>Latest Projects</H1>
           <p className="cursive">&lt;/h1&gt;</p>
         </Grid>
         
@@ -30,13 +30,13 @@ const Projects = () => {
           }}>
             {/* <Grid container> */}
               {/* <Grid item > */}
-                <Card element={"furnitureland"}/>
+                <Card element={"Furnitureland"}/>
               {/* </Grid> */}
               {/* <Grid item > */}
-                <Card element={"junglerun"}/>
+                <Card element={"SUPI"}/>
               {/* </Grid> */}
               {/* <Grid item > */}
-                <Card element={"whatcocktail"}/>
+                <Card element={"Whatcocktail"}/>
               {/* </Grid> */}
             {/* </Grid> */}
         </Grid>

@@ -1,11 +1,13 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-import { Link } from "react-router-dom";
 import "./styles.css";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
+import Grid from "@material-ui/core/Grid";
+import ProjectOverview from "../components/ProjectOverview"
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -43,21 +45,22 @@ export default function Card(element) {
   };
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
-    config: { mass: 8, tension: 200, friction: 40 },
+    config: { mass: 5, tension: 300, friction: 30 },
   }));
   const ProjectData = {
-    "furnitureland": {"url": "https://furniture-land.herokuapp.com", "techStack": "Ruby/Rails, PostgreSQL", "image1":""},
-    "whatcocktail": {"url": "https://whatcocktail.netlify.app/", "techStack": "HTML, JavaScript", "image1": ""},
-    "SUPI": {"url": "https://supi.netlify.app/", "techStack": "React, Rails, PostgreSQL", "image1": ""}
+    "Furnitureland": {"url": "https://furniture-land.herokuapp.com", "techStack": "Ruby/Rails, PostgreSQL", "description": "A full-stack second-hand furniture trading webapp.", "image1":""},
+    "Whatcocktail": {"url": "https://whatcocktail.netlify.app/", "techStack": "HTML, JavaScript", "description": "A random cocktail generator with recipes.", "image1": ""},
+    "SUPI": {"url": "https://supi.netlify.app/", "techStack": "React, Rails, PostgreSQL", "description": "A full-stack supplier management system.", "image1": ""}
   };
   const handleClick = (e, element) => {
     e.preventDefault();
-    window.open(ProjectData[element]["url"], "_blank") ||
-      window.location.replace("https://support.wwf.org.uk");
+    window.open(ProjectData[element["element"]]["url"], "_blank") ||
+      window.location.replace(ProjectData[element["element"]]["url"]);
   };
   return (
     <>
       <div className="cardContainer">
+        <p>{element["element"]}</p>
         <animated.div
           class={`card ${element["element"]}`}
           onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
@@ -65,6 +68,7 @@ export default function Card(element) {
           onClick={handleOpen}
           style={{ transform: props.xys.interpolate(trans) }}
         />
+        <p>{ProjectData[element["element"]]["techStack"]}</p>
       </div>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -80,10 +84,19 @@ export default function Card(element) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">Transition modal</h2>
-            <p id="transition-modal-description">
-              react-transition-group animates me.
-            </p>
+            <Grid container spacing={2} align="center">
+              <Grid item xs={12} md={12} lg={12}>
+                <h1>{element["element"]}</h1>
+                <h3>{ProjectData[element["element"]]["description"]}</h3>
+                <hr/>
+              </Grid>
+              <Grid item xs={12} md={12} lg={12}>
+                <ProjectOverview project={element["element"]}/>
+              </Grid>
+              <Grid item xs={12} md={12} lg={12} >
+                <Button onClick={(e) => handleClick(e, element)}>Go to Site</Button>
+              </Grid>
+            </Grid>
           </div>
         </Fade>
       </Modal>

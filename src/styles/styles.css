@@ -22,11 +22,12 @@ body {
 }
 
 .cardContainer {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 400px;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -34,8 +35,8 @@ body {
 }
 
 .card {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
   background: grey;
   border-radius: 5px;
   background-size: cover;
@@ -46,13 +47,13 @@ body {
   border: 5px solid white;
 }
 
-.furnitureland {
+.Furnitureland {
   background-image: url(../assets/furniture.jpg);
 }
-.whatcocktail {
+.Whatcocktail {
   background-image: url(../assets/rainbow-cocktail.jpg);
 }
-.junglerun {
+.SUPI {
   background-image: url(../assets/jungle.jpg);
 }
 .card4 {
