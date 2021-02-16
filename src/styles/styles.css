@@ -9,20 +9,19 @@ body,
 } */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu,
+  /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu,
     roboto, noto, segoe ui, arial, sans-serif;
-  /* background: transparent; */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
+  -ms-user-select: none; */
   user-select: none;
   cursor: default;
 }
 
 .cardContainer {
-  width: 300px;
+  width: 350px;
   height: 400px;
   margin: 0;
   padding: 0;
@@ -35,7 +34,7 @@ body {
 }
 
 .card {
-  width: 250px;
+  width: 300px;
   height: 350px;
   background: grey;
   border-radius: 5px;
@@ -63,4 +62,25 @@ body {
 .card:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
+}
+
+
+.bg {
+  position: fixed;
+  width: 30vw;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.nav-buttons p, .social-app-buttons p, .logo img {
+  cursor: pointer;
+}
+
+.cursive {
+  font-family: 'Cedarville Cursive', cursive;
+  color: grey;
 }

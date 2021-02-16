@@ -13,10 +13,10 @@ export const HomeDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 150px;
+  padding-left: 100px;
   flex-grow: 1;
 `;
 
 export const H1 = styled.h1`
   margin: 0;
-`
+`;

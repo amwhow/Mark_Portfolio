@@ -44,7 +44,7 @@ const tutorialSteps = {
     {
       label: "Supplier Overview",
       imgPath:
-      "https://markportfoliobucket.s3-ap-southeast-2.amazonaws.com/SUPI/SupplierOverview.png",
+        "https://markportfoliobucket.s3-ap-southeast-2.amazonaws.com/SUPI/SupplierOverview.png",
     },
     {
       label: "Company Invoices",
@@ -87,6 +87,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     height: 20,
     paddingLeft: theme.spacing(4),
+    marginBottom: "10px",
     backgroundColor: theme.palette.background.default,
   },
   img: {

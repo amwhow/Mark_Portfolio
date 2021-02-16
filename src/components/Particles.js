@@ -1,9 +1,8 @@
 import Particles from "react-particles-js";
-import { FixedDiv } from "../styles/StyledDiv";
 
 const ParticleBg = () => {
   return (
-		<div>
+    <div>
       <Particles
         params={{
           particles: {
@@ -32,16 +31,16 @@ const ParticleBg = () => {
             },
           },
           interactivity: {
-          //   events: {
-          //     onhover: {
-          //       enable: true,
-          //       mode: "bubble",
-          //     },
-          //     onclick: {
-          //       enable: true,
-          //       mode: "repulse",
-          //     },
-          //   },
+            //   events: {
+            //     onhover: {
+            //       enable: true,
+            //       mode: "bubble",
+            //     },
+            //     onclick: {
+            //       enable: true,
+            //       mode: "repulse",
+            //     },
+            //   },
             modes: {
               bubble: {
                 distance: 250,
@@ -56,13 +55,12 @@ const ParticleBg = () => {
             },
           },
         }}
-				style={{
-					width: '100%',
-					height: "100%",
-					position: "fixed",
-				}}
-      >
-			</Particles>
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "fixed",
+        }}
+      ></Particles>
     </div>
   );
 };

@@ -6,8 +6,8 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Grid from "@material-ui/core/Grid";
-import ProjectOverview from "../components/ProjectOverview"
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
+import ProjectOverview from "../components/ProjectOverview";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     border: "2px solid #000",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
-    color: "black"
+    color: "black",
   },
 }));
 
@@ -48,9 +48,24 @@ export default function Card(element) {
     config: { mass: 5, tension: 300, friction: 30 },
   }));
   const ProjectData = {
-    "Furnitureland": {"url": "https://furniture-land.herokuapp.com", "techStack": "Ruby/Rails, PostgreSQL", "description": "A full-stack second-hand furniture trading webapp.", "image1":""},
-    "Whatcocktail": {"url": "https://whatcocktail.netlify.app/", "techStack": "HTML, JavaScript", "description": "A random cocktail generator with recipes.", "image1": ""},
-    "SUPI": {"url": "https://supi.netlify.app/", "techStack": "React, Rails, PostgreSQL", "description": "A full-stack supplier management system.", "image1": ""}
+    Furnitureland: {
+      url: "https://furniture-land.herokuapp.com",
+      techStack: "Ruby/Rails, PostgreSQL",
+      description: "A full-stack second-hand furniture trading webapp.",
+      image1: "",
+    },
+    Whatcocktail: {
+      url: "https://whatcocktail.netlify.app/",
+      techStack: "HTML, JavaScript",
+      description: "A random cocktail generator with recipes.",
+      image1: "",
+    },
+    SUPI: {
+      url: "https://supi.netlify.app/",
+      techStack: "React, Rails, PostgreSQL",
+      description: "A full-stack supplier management system.",
+      image1: "",
+    },
   };
   const handleClick = (e, element) => {
     e.preventDefault();
@@ -88,13 +103,19 @@ export default function Card(element) {
               <Grid item xs={12} md={12} lg={12}>
                 <h1>{element["element"]}</h1>
                 <h3>{ProjectData[element["element"]]["description"]}</h3>
-                <hr/>
+                <hr />
               </Grid>
               <Grid item xs={12} md={12} lg={12}>
-                <ProjectOverview project={element["element"]}/>
+                <ProjectOverview project={element["element"]} />
               </Grid>
-              <Grid item xs={12} md={12} lg={12} >
-                <Button onClick={(e) => handleClick(e, element)}>Go to Site</Button>
+              <Grid item xs={12} md={12} lg={12}>
+                <Button
+                  color="secondary"
+                  variant="outlined"
+                  onClick={(e) => handleClick(e, element)}
+                >
+                  Go to Site
+                </Button>
               </Grid>
             </Grid>
           </div>
