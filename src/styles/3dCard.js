@@ -52,19 +52,16 @@ export default function Card(element) {
       url: "https://furniture-land.herokuapp.com",
       techStack: "Ruby/Rails, PostgreSQL",
       description: "A full-stack second-hand furniture trading webapp.",
-      image1: "",
     },
     Whatcocktail: {
       url: "https://whatcocktail.netlify.app/",
       techStack: "HTML, JavaScript",
       description: "A random cocktail generator with recipes.",
-      image1: "",
     },
     SUPI: {
       url: "https://supi.netlify.app/",
       techStack: "React, Rails, PostgreSQL",
       description: "A full-stack supplier management system.",
-      image1: "",
     },
   };
   const handleClick = (e, element) => {

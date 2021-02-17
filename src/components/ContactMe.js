@@ -10,7 +10,7 @@ const ContactMe = () => {
       <p className="cursive">&lt;h1&gt;</p>
       <H1>ContactMe</H1>
       <p className="cursive">&lt;/h1&gt;</p>
-      <Grid container>
+      <Grid container justify="space-between" >
         <Grid item xs={12} md={6} lg={6}>
           <p className="cursive">&lt;form&gt;</p>
           <ContactForm />
@@ -20,7 +20,7 @@ const ContactMe = () => {
           <img
             src={MelPhoto}
             alt="Melbourne"
-            style={{ width: "600px" }}
+            style={{ width: "500px" }}
           />
         </Grid>
       </Grid>

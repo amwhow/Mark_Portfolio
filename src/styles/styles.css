@@ -53,11 +53,11 @@ body {
   background-image: url(../assets/rainbow-cocktail.jpg);
 }
 .SUPI {
-  background-image: url(../assets/jungle.jpg);
+  background-image: url(../assets/SUPI.jpg);
 }
-.card4 {
+/* .card4 {
   background-image: url(../assets/furniture.jpg);
-}
+} */
 
 .card:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
