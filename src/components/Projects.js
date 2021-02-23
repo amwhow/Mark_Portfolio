@@ -6,7 +6,7 @@ import Grid from "@material-ui/core/Grid";
 const Projects = () => {
   return (
     <HomeDiv>
-      <Grid container>
+      <Grid container style={{height:"100%"}}>
         <Grid
           item
           xs={12}
@@ -31,7 +31,9 @@ const Projects = () => {
           style={{
             display: "flex",
             justifyContent: "space-around",
+            alignItems: "center",
             flexWrap: "wrap",
+            height: "100vh",
           }}
         >
           <Card element={"Furnitureland"} />

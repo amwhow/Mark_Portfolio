@@ -9,7 +9,7 @@ const AboutMe = () => {
   let history = useHistory();
   return (
     <HomeDiv>
-      <Grid container justify="space-between">
+      <Grid container justify="space-between" style={{height:"100%"}}>
         <Grid item xs={12} md={4} lg={4}>
           <p className="cursive">&lt;h1&gt;</p>
           <H1>Who's this guy?</H1>
