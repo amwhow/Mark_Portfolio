@@ -26,6 +26,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div>
+        {/* particle effect background  */}
         <FixedDiv>
           <ParticleBg />
         </FixedDiv>

@@ -10,18 +10,16 @@ const ContactMe = () => {
       <p className="cursive">&lt;h1&gt;</p>
       <H1>ContactMe</H1>
       <p className="cursive">&lt;/h1&gt;</p>
-      <Grid container justify="space-between" >
+      <Grid container justify="space-between">
+        {/* form on the left hand side */}
         <Grid item xs={12} md={6} lg={6}>
           <p className="cursive">&lt;form&gt;</p>
           <ContactForm />
           <p className="cursive">&lt;/form&gt;</p>
         </Grid>
+        {/* Melbourne image on the right hand side */}
         <Grid item xs={12} md={6} lg={6} align="center">
-          <img
-            src={MelPhoto}
-            alt="Melbourne"
-            style={{ width: "500px" }}
-          />
+          <img src={MelPhoto} alt="Melbourne" style={{ width: "500px" }} />
         </Grid>
       </Grid>
     </HomeDiv>

@@ -1,21 +1,4 @@
-/* html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-} */
-
 body {
-  /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu,
-    roboto, noto, segoe ui, arial, sans-serif;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none; */
   user-select: none;
   cursor: default;
 }
@@ -30,7 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* background: #f0f0f0; */
 }
 
 .card {
@@ -55,9 +37,6 @@ body {
 .SUPI {
   background-image: url(../assets/SUPI.jpg);
 }
-/* .card4 {
-  background-image: url(../assets/furniture.jpg);
-} */
 
 .card:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);

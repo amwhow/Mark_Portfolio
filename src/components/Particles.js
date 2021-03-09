@@ -31,16 +31,6 @@ const ParticleBg = () => {
             },
           },
           interactivity: {
-            //   events: {
-            //     onhover: {
-            //       enable: true,
-            //       mode: "bubble",
-            //     },
-            //     onclick: {
-            //       enable: true,
-            //       mode: "repulse",
-            //     },
-            //   },
             modes: {
               bubble: {
                 distance: 250,

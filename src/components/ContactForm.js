@@ -77,7 +77,7 @@ export default function MyForm() {
       autoComplete="off"
     >
       <Grid container spacing={2}>
-        {/* custom section */}
+        {/* custom form section */}
         <Grid item xs={12} md={6} lg={6}>
           <CssTextField
             name="name"

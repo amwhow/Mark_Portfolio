@@ -71,6 +71,7 @@ export default function Card(element) {
   };
   return (
     <>
+      {/* 3d card section */}
       <div className="cardContainer">
         <p>{element["element"]}</p>
         <animated.div
@@ -80,8 +81,11 @@ export default function Card(element) {
           onClick={handleOpen}
           style={{ transform: props.xys.interpolate(trans) }}
         />
+        {/* techStack for the project */}
         <p>{ProjectData[element["element"]]["techStack"]}</p>
       </div>
+
+      {/* Modal section */}
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"

@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
 import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 
+// Images for different pages of all projects
 const tutorialSteps = {
   Furnitureland: [
     {
@@ -15,17 +16,17 @@ const tutorialSteps = {
         "https://markportfoliobucket.s3-ap-southeast-2.amazonaws.com/furnitureland/LandingPage.png",
     },
     {
-      label: "Listing Page",
+      label: "Listing Info Page",
       imgPath:
         "https://markportfoliobucket.s3-ap-southeast-2.amazonaws.com/furnitureland/ListingDetail.png",
     },
     {
-      label: "New Listing",
+      label: "New Listing Page",
       imgPath:
         "https://markportfoliobucket.s3-ap-southeast-2.amazonaws.com/furnitureland/NewListing.png",
     },
     {
-      label: "Listings Page",
+      label: "All Listings Page",
       imgPath:
         "https://markportfoliobucket.s3-ap-southeast-2.amazonaws.com/furnitureland/ListingResult.png",
     },
@@ -34,7 +35,7 @@ const tutorialSteps = {
     {
       label: "Landing Page",
       imgPath:
-        "https://markportfoliobucket.s3-ap-southeast-2.amazonaws.com/SUPI/LandingPage.png",
+        "https://markportfoliobucket.s3-ap-southeast-2.amazonaws.com/SUPI/LandingPage_v2.png",
     },
     {
       label: "Dashboard Page",
@@ -100,7 +101,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ProjectOverview(project) {
-  // console.log(tutorialSteps[project.project])
   const classes = useStyles();
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
@@ -116,11 +116,13 @@ export default function ProjectOverview(project) {
 
   return (
     <div className={classes.root}>
+      {/* page brief */}
       <Paper square elevation={0} className={classes.header}>
         <Typography>
           {tutorialSteps[project.project][activeStep].label}
         </Typography>
       </Paper>
+      {/* Carousel Section */}
       <img
         className={classes.img}
         src={tutorialSteps[project.project][activeStep].imgPath}

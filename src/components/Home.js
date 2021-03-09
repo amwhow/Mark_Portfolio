@@ -11,6 +11,7 @@ const Home = () => {
     <HomeDiv>
       <Grid container>
         <Grid item xs={12} md={6} lg={6}>
+          {/* cursive fonts are labeled with cursive class */}
           <p className="cursive">&lt;h1&gt;</p>
           <H1>Hi, </H1>
           <H1>I am Mark,</H1>
