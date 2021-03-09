@@ -8,7 +8,7 @@ const ContactMe = () => {
   return (
     <HomeDiv>
       <p className="cursive">&lt;h1&gt;</p>
-      <H1>ContactMe</H1>
+      <H1>Contact Me</H1>
       <p className="cursive">&lt;/h1&gt;</p>
       <Grid container justify="space-between">
         {/* form on the left hand side */}
